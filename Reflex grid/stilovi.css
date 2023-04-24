@@ -1,0 +1,159 @@
+#header{
+    background-color: burlywood;
+    border: 2px solid black;
+    width: 100%;
+    margin: auto 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu centar centar centar centar desni'
+    'dole dole dole dole dole desni'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: salmon;
+  padding: 10px;
+}
+
+.horizontalni_meni {
+  background-color: azure;
+  text-align: center;
+  padding: 10px ;
+  font-size: 20px;
+  }
+
+  .item1 { grid-area: header; }
+  .item2 { grid-area: menu;   }
+  .item3 { 
+    grid-area: centar;
+    background-color: rgba(255, 255, 255, 0.9);
+   }
+  .item4 { grid-area: desni; }
+  .item5 { grid-area: footer; }
+  .item6 { grid-area: dole;}
+  .searchbar{
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+
+}
+.search{
+    background-color: aliceblue;
+    width: 30%;
+    padding-top: 10px ;
+    
+    display: inline-block;
+    height: 50px;
+  
+}
+
+.levi_meni {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: yellow;
+    height:max-content; /* Full height */
+   
+   
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /*li a.active {
+    background-color: rgb(255, 123, 0);
+    color: white;
+    text-decoration: underline;
+  }
+  li a:hover:not(.active) {
+    background-color: rgb(255, 123, 0);
+    color: white;
+  }
+  li{
+    border-right: 1px solid #bbb;
+  }*/
+  
+  li a:hover {
+    background-color: salmon;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .ul1{
+    display: inline-block;
+    text-align: center;
+    
+
+  }
+.logo {
+    height:50px;
+     width: 300px; 
+     background: none;
+    }
+.input_proizvod{
+    width: 70%; 
+    height: 30px;
+}
+#button_submit_proizvod{
+    height: 30px; 
+    width: 30px;
+    vertical-align: middle"
+}    
+.login_register{
+    vertical-align: middle;
+    background-color: antiquewhite;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+ul {
+  background-color: yellow;
+  padding: 0;
+}
+.h_meni {
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-size: 20px;
+  height: auto;
+  }
+  .txt_lft {
+    text-align: left;
+  }
+
+.horizontalni_meni_dole{
+  display: inline;
+  
+  margin-left: 50px;
+  margin-right: 120px;
+  padding: 3px;
+  
+}
+.horizontalni_meni_dole  a {
+  text-decoration: none;
+  color:red;
+}
+.horizontalni_meni p::before{
+  background-image: url('Reflex_logo.jpg');
+  width: 40px;
+  height: 50px;
+ 
+  content: "trewtert";
+  background-image: linear-gradient(red, yellow);
+}
+.horizontalni_meni p::after{
+  background-image: url('Reflex_logo.jpg');
+  width: 40px;
+  height: 50px;
+
+  content: "tert";
+  background-image: linear-gradient(orange, green);
+}
