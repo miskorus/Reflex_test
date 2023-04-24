@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reflex Despotovac</title>
+    <link rel="icon" type="image/x-icon" href="/Projects/Reflex grid/images/ico.png">
+    <link rel="stylesheet" href="stilovi.css">
+</head>
+<body>
+    <div id="header">
+        <nav style="text-align: center; margin: 10px;">
+            <span><a href="/index.html">Home</a></span> 
+            <span><a href="/share">Share</a></span>
+            <span><a href="/about">About us</a></span>
+            <span><a href="/faq">FAQ</a></span>
+        </nav>
+       
+    </div>
+    <div class="grid-container">
+        <div class="item1 horizontalni_meni">
+            
+            <div class="searchbar">
+                <img src="/Projects/Reflex grid/Reflex_logo.jpg" alt="REFLEX DE" class="logo" >
+            </div>
+    
+            <div class="search" >
+                
+                <form >
+                    
+                    <input class="input_proizvod" type="text" placeholder="  Naziv proizvoda ili barkod">
+                    <button id="button_submit_proizvod">S</button>
+                      
+                </form>
+                
+            </div>
+            <div class="login_register" >
+                <a href="#">LOGIN</a> 
+                <a> or </a>
+                <a href="#">REGISTER</a>
+            </div>
+        </div>
+        <div class="item2 horizontalni_meni">
+            <ul class="levi_meni">
+                <li><a id="home_link" href="#home">Home</a></li>
+                <li><a id="news_link" href="#news">Novosti</a></li>
+                <li><a href="#contact">Kontact</a></li>
+                <li><a href="#about">O nama</a></li>
+              </ul>
+        </div>
+        <div class="item3">
+            <div class="h_meni">
+                <ul class="txt_lft">
+                    <li class="ul1">
+                        <a href="#" >Novi proizvodi</a>  
+                    </li>
+                    <li class="ul1">
+                        <a href="#" >Kućna hemija</a>
+                    </li>
+                    <li class="ul1">
+                        <a href="#" >Kozmetika</a>
+                    </li>
+                    <li class="ul1">
+                        <a href="#" >Tekstil</a>
+                    </li>
+                    <li class="ul1">
+                        <a href="#" >Razno</a>
+                    </li>
+                    <li class="ul1">
+                        <a href="#" >Desni navi</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+                <div>
+                    <img id="slider_img" src="/Projects/Reflex grid/images/header_img.jpg" height="300px" width="98%">
+                </div> 
+                   
+        </div>  
+        <div class="item4 horizontalni_meni">Right</div>
+        <div class="item6 horizontalni_meni">
+                <p class="horizontalni_meni_dole">
+                <a href="#">AKCIJE!</a>
+                </p> 
+                <p class="horizontalni_meni_dole">
+                 <a href="#">BRZA DOSTAVA</a>   
+                </p>
+                <p class="horizontalni_meni_dole">
+                  <a href="#">LOYALITY PROGRAM</a>      
+                </p>
+                <p class="horizontalni_meni_dole">
+                    <a href="#">EKSKLUZIVNI PROIZVODI</a>
+                </p>
+
+
+        
+
+
+        </div>
+        <div class="item5 horizontalni_meni">Footer</div>
+      </div>
+
+
+
+
+
+
+
+
+ <script>     
+        document.getElementById("home_link").addEventListener("mouseover", function(){ return ChangeSlide1("images/s3.jpg"); });
+        document.getElementById("home_link").addEventListener("mouseout", function(){ return ChangeSlide1("images/header_img.jpg"); }); 
+        
+        document.getElementById("news_link").addEventListener("mouseover", function(){ return ChangeSlide1("images/s4.jpg"); }); 
+        document.getElementById("news_link").addEventListener("mouseout", function(){ return ChangeSlide1("images/header_img.jpg"); }); 
+       
+       
+       
+        function ChangeSlide1(lin_k){
+          //alert(lin_k);
+            document.getElementById("slider_img").src=lin_k;
+            return;
+        } 
+        
+       
+</script>
+</body>
+</html>
+
