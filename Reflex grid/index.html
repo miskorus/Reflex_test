@@ -42,8 +42,8 @@
             <ul class="levi_meni">
                 <li><a id="home_link" href="#home">Home</a></li>
                 <li><a id="news_link" href="#news">Novosti</a></li>
-                <li><a href="#contact">Kontact</a></li>
-                <li><a href="#about">O nama</a></li>
+                <li><a id="contact" href="#contact">Kontact</a></li>
+                <li><a id="aboutus" href="#about">O nama</a></li>
               </ul>
         </div>
         <div class="item3">
@@ -114,8 +114,12 @@
         document.getElementById("news_link").addEventListener("mouseover", function(){ return ChangeSlide1("images/s4.jpg"); }); 
         document.getElementById("news_link").addEventListener("mouseout", function(){ return ChangeSlide1("images/header_img.jpg"); }); 
        
-       
-       
+        document.getElementById("contact").addEventListener("mouseover", function(){ return ChangeSlide1("images/contact.jpg"); }); 
+        document.getElementById("contact").addEventListener("mouseout", function(){ return ChangeSlide1("images/header_img.jpg"); });
+
+        document.getElementById("aboutus").addEventListener("mouseover", function(){ return ChangeSlide1("images/aboutus.jpg"); }); 
+        document.getElementById("aboutus").addEventListener("mouseout", function(){ return ChangeSlide1("images/header_img.jpg"); });
+        
         function ChangeSlide1(lin_k){
           //alert(lin_k);
             document.getElementById("slider_img").src=lin_k;
