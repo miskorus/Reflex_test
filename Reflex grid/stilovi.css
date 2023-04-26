@@ -43,7 +43,6 @@
     background-color: aliceblue;
     width: 30%;
     padding-top: 10px ;
-    
     display: inline-block;
     height: 50px;
   
@@ -131,7 +130,6 @@ ul {
 
 .horizontalni_meni_dole{
   display: inline;
-  
   margin-left: 5px;
   margin-right: 10px;
   padding: 3px;
@@ -142,18 +140,18 @@ ul {
   color:red;
 }
 .horizontalni_meni p::before{
-  background-image: url('Reflex_logo.jpg');
+  background-image: url("Reflex_logo.jpg");
   width: 40px;
   height: 50px;
  
-  content: "trewtert";
-  background-image: linear-gradient(red, yellow);
+  content: "pre";
+  background-image: linear-gradient(yellow, red);
 }
 .horizontalni_meni p::after{
   background-image: url('Reflex_logo.jpg');
   width: 40px;
   height: 50px;
 
-  content: "tert";
-  background-image: linear-gradient(orange, green);
+  content: "posle";
+  background-image: linear-gradient(yellow, green);
 }
